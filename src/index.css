@@ -3,7 +3,7 @@
 * {
   margin: 0;
   font-family: "Noto Sans", sans-serif;
-  color: #ffffff;
+  color: #000000;
 }
 
 .navbar {
@@ -14,18 +14,17 @@
   max-width: 60%;
   margin: 0 auto;
   border-bottom: 1px solid #ffffff;
-  
 }
 
 .navbar h1 {
-  color: #00FFFF;
+  color: #1f7263;
 }
 
 .navbar a {
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .navbar a:hover {
@@ -36,4 +35,24 @@
   max-width: 60%;
   margin: 20px auto;
   padding: 10px;
+}
+
+/* For blogs preview */
+.blog-preview {
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #509b8d;
+  border-bottom: 1px solid #000000;
+}
+
+.blog-preview:hover {
+  box-shadow: 5px 5px 5px #064444;
+}
+
+.blog-preview p {
+  font-size: 15px;
+}
+
+.blog-preview h3 {
+  color: #21ecc7;
 }
