@@ -13,7 +13,12 @@ const Home = () => {
     return ( 
         <div className="home">
             {/* Call BlogList component and provide blogs state as prop to render */}
-            <BlogList blogs={blogs} title="Home"/>
+            <BlogList blogs={blogs} title="All Blogs"/>
+            <BlogList blogs={blogs.filter((blog) => {
+                // Return only the blogs written by Rick into the components
+                return blog.author === 'Rick';
+            })} title="Rick's Blogs"/>
+            
         </div>
     );
 }

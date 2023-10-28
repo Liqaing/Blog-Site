@@ -39,8 +39,8 @@
 
 /* For blogs preview */
 .blog-preview {
-  padding: 10px;
-  margin-bottom: 15px;
+  padding: 10px 10px;
+  margin: 15px 0;
   background-color: #509b8d;
   border-bottom: 1px solid #000000;
 }
