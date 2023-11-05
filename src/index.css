@@ -66,3 +66,7 @@
   display: block;
   margin-top: 10px;
 }
+
+.error {
+  color: #FF0000;
+}
