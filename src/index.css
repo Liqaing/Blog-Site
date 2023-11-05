@@ -50,9 +50,19 @@
 }
 
 .blog-preview p {
+  float: right;
   font-size: 15px;
 }
 
-.blog-preview h3 {
+.blog-preview h3 {  
   color: #21ecc7;
+}
+
+.blog-preview h3, .blog-preview p {
+  display: inline-block;
+}
+
+.blog-preview button {
+  display: block;
+  margin-top: 10px;
 }
