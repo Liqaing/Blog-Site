@@ -15,7 +15,6 @@ const useFetch = (url) => {
 
         const abortController = new AbortController();
 
-
         // Fetch data from api endpoint and set data to blogs state
         fetch(url, { signal: abortController.signal })
             .then(res => {
