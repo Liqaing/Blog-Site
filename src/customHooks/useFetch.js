@@ -12,9 +12,12 @@ const useFetch = (url) => {
     // useEffect run when component render to page
 
     useEffect(() => {
-    
+
+        const abortController = new AbortController();
+
+
         // Fetch data from api endpoint and set data to blogs state
-        fetch(url)
+        fetch(url, { signal: abortController.signal })
             .then(res => {
                 if (!res.ok) {
                     throw Error("Unable to load the blog");
@@ -27,11 +30,14 @@ const useFetch = (url) => {
                 setError(null);
             })
             .catch(err => {
-                setError(err.message);
-                setLoading(false);
-                setData(null);
-            })
-    
+                if (err.name !== "AbortError") {
+                    setError(err.message);
+                    setLoading(false);
+                    setData(null);    
+                }
+            });
+        
+        return () => abortController.abort();
     }, [url]);
 
     return { data, isLoading, error };
