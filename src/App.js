@@ -3,6 +3,7 @@ import Home from './components/home';
 import CreateBlog from './components/createBlog';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import BlogDetails from './components/blogs-detail';
+import NotFound from './components/notFound';
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
 
             <Route path='/blogs/:id'>
               <BlogDetails/>
+            </Route>
+
+            <Route path="*">
+              <NotFound/>
             </Route>
           </Switch>
         </div>
