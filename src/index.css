@@ -78,6 +78,8 @@
   color: #FF0000;
 }
 
+
+/* Blog details */
 .blog-details h3 {
   font-size: 20px;
   color: #1f7263;
@@ -91,6 +93,16 @@
 .blog-details divn {
   text-indent: 15px;
   margin: 10px 0;
+}
+
+.blog-details button {
+  background: #509b8d;
+  color: #21ecc7;
+  border: 0;
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 /* Create blog form */
