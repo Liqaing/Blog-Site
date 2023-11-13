@@ -4,6 +4,7 @@ import useFetch from "../customHooks/useFetch";
 
 const Home = () => { 
 
+    // Call the custom hook useFetch
     const {data: blogs, isLoading, error} = useFetch('http://localhost:8000/blogs');
     
 

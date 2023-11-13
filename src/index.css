@@ -20,6 +20,12 @@
   color: #1f7263;
 }
 
+
+.navbar .title-link {
+  margin-left: 0;
+  padding: 0;
+}
+
 .navbar a {
   margin-left: 16px;
   text-decoration: none;
@@ -30,6 +36,7 @@
 .navbar a:hover {
   color: #1f7263;
 }
+
 
 .content {
   max-width: 60%;
@@ -69,4 +76,19 @@
 
 .error {
   color: #FF0000;
+}
+
+.blog-details h3 {
+  font-size: 20px;
+  color: #1f7263;
+  margin-bottom: 5px;
+}
+
+.blog-details cite {
+  font-size: 15px;
+}
+
+.blog-details divn {
+  text-indent: 15px;
+  margin: 10px 0;
 }
