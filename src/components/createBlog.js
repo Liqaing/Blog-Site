@@ -7,10 +7,19 @@ const CreateBlog = () => {
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('Choose an author');
 
+    // Handle form submit event
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        // Create javascript obj which contain the data
+        const blog = {title, body, author};
+        console.log(blog)
+    }
+
     return (
         <div className="create-blog">
             <h2>Create new blog</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label>Blog title</label>
                 <input 
                     type="text"
