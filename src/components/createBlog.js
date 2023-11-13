@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 const CreateBlog = () => {
 
@@ -7,6 +8,7 @@ const CreateBlog = () => {
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('Choose an author');
     const [isLoading, setIsLoading] = useState(false);
+    const history = useHistory();
 
     // Handle form submit event
     const handleSubmit = (e) => {
@@ -25,7 +27,9 @@ const CreateBlog = () => {
         })
         .then(() => {
             console.log('New blog added');
-            setIsLoading(false)
+            setIsLoading(false);
+            // Redirect use to home poge route
+            history.push('/');
         })
     }
 
